@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generation</title>
+    <link rel="stylesheet" href="password.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lumanosimo&family=Nova+Cut&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- 
+    1. INPUT SHOULDNT BE EMPTY.
+    2. MIN 8 CHARS.
+    3. 20 CHARS.
+    4. OLD AND NEW PASSWORD SHOULD BE SAME LiKE A===B or not.
+ -->
+
+ 
+
+    
+     
+     
+     <section class="microsoftlogo">
+         <img src="images/company logo.png" alt="#">
+         <p>MICROSOFT</p>
+        </section>
+    
+        <div class="hero">
+            <section class="passwords">
+    
+                <form id="myForm" action="submit.html" target="_blank">
+    
+                    <label for="newpass" class="labels">New Password:</label><br><input class="inputs" type="password"
+                        name="newpass" id="newpass" placeholder="New Password">
+                    <p style="display: none;" id="newmsg"></p><br>
+                    <input type="checkbox" id="showPassword1" onclick="myFunction1()" value="">
+                    <label for="showPassword1" class="showpass-label">Show Password</label>
+                    <br><br>
+    
+                    <label for="confirmpass" class="labels">Confirm Password:</label><br><input class="inputs"
+                        type="password" name="conpass" id="confpass" placeholder="Confirm Password">
+                    <p style="display: none;" id="confmsg"></p><br>
+    
+                    <input type="checkbox" id="showPassword2" onclick="myFunction2()" value="">
+                    <label for="showPassword2" class="showpass-label">Show Password</label> <br><br>
+    
+                    <p style="display:none; " id="note"></p>
+    
+                    <input type="checkbox" id="remember">
+                    <label for="remember" class="labels">Remember Me</label>
+                    <p class="savemypassword">Save my password for next time</p>
+                    <button onclick="btn(event)" class="btn">Reset</button>
+                </form>
+            </section>
+    
+            <section class="or">
+                <p>OR
+                <p>
+            </section>
+    
+            <section class="accountinfo">
+                <p class="p3">Don't have an account? <span>Sign up</span></p>
+    
+                <div class="div1">
+                    <img src="images/google logo.png" alt="">
+                    <p>Sign in with Google</p>
+                </div>
+                <div class="div2">
+                    <img src="images/facebook logo.png" alt="">
+                    <p>Sign in with facebook</p>
+                </div>
+                <div class="div3">
+                    <img src="images/apple logo2.svg" alt="">
+                    <p>Sign in with Apple</p>
+                </div>
+                <div class="div4">
+                    <img src="images/copyrright.svg" alt="">
+                    <p>copyright 2023 Microsoft
+                        Corporation</p>
+                </div>
+    
+    
+    
+            </section>
+        </div>
+ 
+
+
+
+
+
+
+    <script src="password.js"></script>
+</body>
+
+</html>
